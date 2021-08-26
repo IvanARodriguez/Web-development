@@ -7,6 +7,35 @@
     <title>Form Controls</title>
 </head>
 <body>
+    <form action="/tacos">
+        <p>
+            <label for="username">Enter username</label>
+            <input type="text" id="username" placeholder="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter password</label>
+            <input type="text" id="password" placeholder="password" name="password">
+        </p>
+        <p>
+            <label for="color">Enter color</label>
+            <input type="color" id="color" name="color">
+        </p>
+        <!--Alternative way to label an input-->
+        <label for="">
+            Enter a Number: 
+            <input type="number" placeholder="enter a number" name="num" min="1" max="10">
+        </label>
+        <br>
+        <p>
+            <!--The following button will not submit because of its type-->
+            <button type="button">Regular button (won't submit)</button>
+            <!--This buton submit the form-->
+            <button>Submit</button>
+            <!--This buton submit the form too-->
+            <input type="submit" value="Click Me">
+        </p>
+        
+    </form>
     <!--Not inside a form, no default behavior-->
     <button>Not Inside Form</button>
     <h2>Hijacking Searches</h2>
@@ -43,8 +72,40 @@
             <label for="">M</label>
             <input type="radio" name="size" id="m" value="m">
         </p>
+        <p>
+            <!--This type of form makes the user select an item, for default option pleasae selected  attribute inside option tag-->
+            <label for="">Please Select a Meal Type</label>
+            <select name="meal" id="meal">
+                <option value="">Please select an option</option>
+                <option value="fish">fish</option>
+                <option value="veg">vegetarian</option>
+                <option value="steak">steak</option>
+            </select>
+        </p>
+        <p>
+            <label for="">Amount of cheese:</label>
+            <input type="range" name="cheese" id="cheese" min="1" max="10" value="75">
+        </p>
+        <p>
+            <label for="">Any Special Request</label>
+            <br>
+            <textarea name="request?" id="request" cols="30" rows="10" placeholder="Type your request here"></textarea>
+        </p>
         <button>Submit</button>
     </form>
+
+    <h2>Validation Demo</h2>
+    <form action="/dummy">
+        <label for="first">Enter First Name</label>
+        <input type="text" id="first" name="first name" required>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" minlength="5" maxlength="20" required >
+
+        </p>
+        <button>Submit</button>
+    </form>
+
 
 
 </body>
