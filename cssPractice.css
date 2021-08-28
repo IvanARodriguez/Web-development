@@ -1,6 +1,8 @@
-h2{
-    color: teal;
-    background-color: plum;
+/*Color practice starts here*/
+
+/*h2{
+    color:#5fcffc;
+    background-color: rgb(89, 151, 0);
 }
 
 button{
@@ -10,4 +12,12 @@ button{
 p{
     color: olive;
     background: orange;
+}*/
+
+/* Text Properties practices start right here */
+
+h1{
+    text-align: center;
+    font-weight: 200;
+    text-decoration: orange underline;
 }
