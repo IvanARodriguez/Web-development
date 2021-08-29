@@ -19,5 +19,15 @@ p{
 h1{
     text-align: center;
     font-weight: 200;
-    text-decoration: orange underline;
+    text-decoration: #f78120 underline wavy;
+    letter-spacing: 15px;
+    font-size: 80px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+
+}
+
+p{
+    line-height: 2;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
