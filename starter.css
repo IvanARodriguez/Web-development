@@ -9,8 +9,17 @@ button{
     font-size: 20px;
     background-color: #a8dadc;
 }
+button:hover{
+    background-color: #e63946;
+}
+.post button:active{
+    background-color: #70e000;
+}
 h1, h2{
     color: #1d3557;
+}
+h2::first-letter{
+    font-size: 50px;
 }
 #signupbtn{
     background-color: #1d3557;
@@ -19,8 +28,38 @@ h1, h2{
 span{
     color: #457b9d;
 }
+/*the end of type below is applied to every other post*/
+.post:nth-of-type(2n){
+    background-color: #c4ccc2;
+}
+.post a{
+    color: #457b9d;
+    text-decoration: none;
+    font-weight: 700;
+}
+.post a:hover{
+    text-decoration: underline;
+}
+footer a{
+    color: #e63946;
+}
 .tag{
     background-color: #e63946;
     color: #f1faee;
     font-size: 20px;
+}
+h2 + button{
+    font-size: 15px;
+}
+footer > a{
+    color: #457b9d;
+}
+input[type="password"] {
+ color: brown;
+}
+p::first-line{
+    color: purple;
+}
+p::selection{
+    background-color: burlywood;
 }
