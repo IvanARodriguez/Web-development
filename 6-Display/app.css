@@ -1,0 +1,21 @@
+h1{
+    background-color: palegoldenrod;
+    border: 2px solid black;
+    display: none;
+    margin: 5px;
+}
+
+span{
+    background-color: paleturquoise;
+    border: 2px solid black;
+    margin: 5px;
+}
+
+div{
+    background-color: chocolate;
+    width: 200px;
+    height: 200px;
+    border: 3px solid brown;
+    display: inline-block;
+
+}
