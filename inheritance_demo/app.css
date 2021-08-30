@@ -1,0 +1,6 @@
+/*When you set a parents color for example Body, every child gets Body's properties*/
+
+body {
+    background-color: #232423;
+    color: #e3e3e3;
+}
