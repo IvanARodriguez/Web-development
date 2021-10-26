@@ -3,22 +3,15 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-main{
-    width: 80%;
-    margin: 0 auto;
-}
-h1{
-    font-size: 3em;
-    margin-bottom: 0;
-}
-h1+h2{
-    margin-top: 10px;
-}
-h1,h2,h3{
-    font-weight:100;
-    font-family: 'Roboto', sans-serif;
-}
 img{
-    max-width: 33%;
-    max-height: 500px;
+    width: 30%;
+    margin: calc(10%/6);
+}
+nav{
+    text-transform: uppercase;
+    border-bottom: 4px solid #ff9393;
+    width: 30%;
+    padding: .7em 0;
+    margin-left: calc(10%/6);
+    font-size: 1.4em;
 }
