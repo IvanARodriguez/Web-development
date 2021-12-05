@@ -9,14 +9,23 @@ h1{
     text-align: center;
 }
 nav{
+    display: flex;
+    justify-content: space-between;
     background-color: #1c1d1f;
     border-bottom: 1px solid #3e4143;
-    font-size: 1em;
+    font-size: 1.5em;
     padding: 10px;
 }
+ul{
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
 ul, li {
-    display: inline;
-    margin: 0 5px;
+    display: inline-flex;
+    margin: 0;
     padding: 0;
 }
 
@@ -25,18 +34,24 @@ a:hover{
 }
 
 a{
-    border-right: 2px solid #bac9d4;
-    padding-right: 10px;
     text-decoration: none;
     color: #bac9d4;
 }
+
+/*
+========================
+MULTIPLE BREAKING POINTS
+========================
 
 /*@media(min-width: 600px) and (max-width: 800px){
     h1{
         color: rgb(96, 26, 96);
     }
-}*/
+}
 
+======================
+SINGLE BREAKING POINTS
+======================
 
 @media (max-width: 1500px){
     h1 {
@@ -54,4 +69,21 @@ a{
         color: red;
         font-size: 2em;
     }
+}*/
+
+@media (max-width: 768px){
+    h1{
+        font-size: 4em;
+    }
+    nav, nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
 }
+@media (max-width: 576px){
+    h1{
+        font-size: 3em;
+    }
+}
+
+
