@@ -1,11 +1,54 @@
+/*============================================
+Predetermined design patterns for all browsers
+==============================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,  figure figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{
+    box-sizing: border-box;
+}
+body {
+	line-height: 1;
+    min-height: 100vh;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*===============================
+Project custom design starts here
+=================================*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,500;1,300&family=Roboto:ital,wght@0,100;0,400;1,700&display=swap');
 
 body{
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
 }
 h1{
-    font-size: 6em;
+    font-size: 4.8em;
     text-align: center;
 }
 nav{
@@ -15,75 +58,167 @@ nav{
     border-bottom: 1px solid #3e4143;
     font-size: 1.5em;
     padding: 10px;
+    font-weight: 200;
 }
-ul{
+nav ul{
     flex: 1;
     max-width: 50%;
     display: flex;
-    list-style: none;
     justify-content: space-evenly;
 }
-ul, li {
+nav ul, nav li {
     display: inline-flex;
-    margin: 0;
-    padding: 0;
 }
 
 a:hover{
     color: #487a9a;
 }
 
-a{
+nav a{
     text-decoration: none;
     color: #bac9d4;
 }
 
-/*
-========================
-MULTIPLE BREAKING POINTS
-========================
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8em 15em;
+    background-color: #232323;
+    color: #5a6973;
+}
+.home h4{
+    color: rgb(199, 210, 219);
+    margin: 3em;
+    line-height: 2em;
+    font-size: 1.2em;
+}
+.btnhome{
+    background-color: #487a9a;
+    border: none;
+    font-size: 2em;
+    color: #d4dbe0;
+    padding: 5px 15px;
+    border-radius: .3em;
+}
+.btnhome:hover{
+    background-color: #3a627c;
+    transition-duration: .5s;
+    color: #bdc1c3;
+}
+/*===============================
+Pricing home section
+=================================*/
+.price-container{
+    background-color: #60a9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel{
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+    margin: 70px;
+    width: 100%;
+    max-width: 1030px;
+    display: flex;
+    text-align: center;
+}
+.pricing-plan{
+    border-bottom: 1px solid #e1f1ff;
+    border-right: 1px solid #e1f1ff;
+    padding: 15px;
+}
+.pricing-plan:last-child{
+    border-right: none;
+}
+.pricing-img{
+    max-width: 300px;
+    margin-bottom: 25px;
+}
+.pricing-header{
+    color: #888;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.pricing-feature{
+    margin: 50px 0 25px;
+    color: #016ff9;
+}
+.pricing-feature-item{
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid #e1f1ff;
+}
+.pricing-feature-item:last-child{
+    border-bottom: 1px solid #e1f1ff;
+}
+.pricing-price{
+    color: #016ff9;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+}
+.pricing-button{
+    border: 1px solid #9dd1ff;
+    border-radius: .3em;
+    color: #348efe;
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin: 25px 0;
+    transition: background-color 200ms ease-in-out ;
+}
+.pricing-button:hover, .pricing-button:focus{
+    background-color: #e1f1ff;
+}
+.pricing-button.is-feature{
+    background-color: #48aaff;
+    color: white;
+}
+.pricing-button.is-feature:hover, .pricing-button.is-feature:focus{
+    background-color: #269aff;
+    color: white;
+}
 
-/*@media(min-width: 600px) and (max-width: 800px){
+/*===============================
+Responsive breaking points.
+=================================*/
+
+@media (max-width: 770px){
     h1{
-        color: rgb(96, 26, 96);
-    }
-}
-
-======================
-SINGLE BREAKING POINTS
-======================
-
-@media (max-width: 1500px){
-    h1 {
-        color: rgb(0, 124, 113);
-    }
-}
-@media (max-width: 1000px){
-    h1 {
-        color: orange;
         font-size: 4em;
     }
-}
-@media (max-width: 500px){
-    h1 {
-        color: red;
-        font-size: 2em;
+    h4{
+        font-size: .5em;
     }
-}*/
-
-@media (max-width: 768px){
-    h1{
-        font-size: 4em;
+    .home{
+        padding: 3em 2em;
     }
     nav, nav ul{
         flex-direction: column;
         align-items: center;
     }
-}
-@media (max-width: 576px){
-    h1{
-        font-size: 3em;
+    .panel{
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .pricing-plan{
+        border-right: none;
+        padding: 0;
+    }
+    .pricing-plan:last-child{
+        border-bottom: none;
+    }
+    .pricing-img{
+        width: 100%;
     }
 }
-
-
