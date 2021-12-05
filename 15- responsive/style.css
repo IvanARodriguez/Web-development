@@ -4,3 +4,54 @@ body{
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
+h1{
+    font-size: 6em;
+    text-align: center;
+}
+nav{
+    background-color: #1c1d1f;
+    border-bottom: 1px solid #3e4143;
+    font-size: 1em;
+    padding: 10px;
+}
+ul, li {
+    display: inline;
+    margin: 0 5px;
+    padding: 0;
+}
+
+a:hover{
+    color: #487a9a;
+}
+
+a{
+    border-right: 2px solid #bac9d4;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #bac9d4;
+}
+
+/*@media(min-width: 600px) and (max-width: 800px){
+    h1{
+        color: rgb(96, 26, 96);
+    }
+}*/
+
+
+@media (max-width: 1500px){
+    h1 {
+        color: rgb(0, 124, 113);
+    }
+}
+@media (max-width: 1000px){
+    h1 {
+        color: orange;
+        font-size: 4em;
+    }
+}
+@media (max-width: 500px){
+    h1 {
+        color: red;
+        font-size: 2em;
+    }
+}
