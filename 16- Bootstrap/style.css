@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(12, 19, 27);
+    font-size: .7em;
+    color: rgb(236, 236, 236);
+}
+h1{
+    color: rgb(196, 231, 219);
+}
+
+.contact{
+    background: rgb(147,189,195);
+    background: linear-gradient(227deg, rgba(147,189,195,1) 0%, rgba(147,189,195,1) 27%, rgba(190,222,227,1) 100%);
+}
