@@ -1,13 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
 body{
-    background-color: rgb(12, 19, 27);
+    background-color: rgb(191, 229, 231);
     font-size: .7em;
     color: rgb(236, 236, 236);
-}
-h1{
-    color: rgb(196, 231, 219);
+    height: 100vh;
+    font-family: 'PT Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .contact{
     background: rgb(147,189,195);
     background: linear-gradient(227deg, rgba(147,189,195,1) 0%, rgba(147,189,195,1) 27%, rgba(190,222,227,1) 100%);
+}
+
+ul{
+    margin: 15px;
+}
+
+.id-Card{
+    max-width: 300px;
+    color: rgb(38, 40, 40);
+    align-self: center;
+}
+.user{
+    position: relative;
+    display: flex;
+    height: 200px;
+    background-image: url("./images/user.jpeg");
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 45% 25%;
+
+    box-shadow: 0px 5px 10px rgb(39, 41, 42);
+}
+.userId{
+    border-radius: 0 0 20px 20px ;
+    color: white;
+    align-self: end;
+    width: 100%;
+    padding: 1em;
+    background-color: rgba(49, 49, 49, 0.416);
+    margin: 0;
+}
+hr{
+    max-width: 150px;
+    border: 1px solid rgb(0, 127, 117);
+}
+.userId h3{
+    color: rgb(159, 186, 207);
+}
+.card-details{
+    background-color: rgb(219, 234, 255);
+    padding: 25px 5px;
+    margin: -15px 0;
+    border-radius: 0 0 2em 2em;
+    border: 5px solid rgb(1, 119, 128);
+}
+p{
+    margin-top: 17px;
+}
+li{
+    color: rgb(76, 87, 98);
+}
+.contact button{
+    padding: 5px 10px;
+    margin: auto 5px;
+    width: 50%;
+    align-self: center;
+    width: 50%;
+    background-color: rgb(1, 119, 128);
+    color: white;
+    font-size: 16px;
+    border-radius: .3em;
+    border: none;
+    cursor: pointer;
+}
+.contact ul{
+    width: 50%;
+    align-self: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.contact ul li{
+display: inline-flex;
+align-self: center;
+margin: 0 3px;
+}
+li svg{
+    color: beige;
+}
+.contact{
+    display: flex;
+    margin: 2em 0;
+    background: transparent !important;
+}
+button:hover{
+    background-color: rgb(0, 93, 98);
+    transition: all .2s ease-in-out;
 }
